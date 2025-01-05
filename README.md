@@ -34,3 +34,12 @@ Various hyperparameters within the encoder and decoder were fine-tuned to improv
 
 Evaluation
 The clustering of the data did not produce the level of separation required to classify AD across its various stages and we could only manage to classify AD and CN. In the latent space, data was overlapping clusters, making it harder to classify stages. 
+Reasons
+1-	Data-Related Issues
+            It may be due to the small dataset and couldn’t to characterize the Alzheimer’s stages.
+2-	Autoencoder Architecture
+            The autoencoder architecture may not be sufficiently complex to capture the subtle, non-linear patterns
+3-	Cluster Overlap
+            Due to cluster overlapping, High-dimensional data often results in overlapping clusters, making it harder to classify stages
+
+
