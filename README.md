@@ -1,5 +1,13 @@
-Autoencoders pre-trained unsupervised initialized the network weights before fine-tuning them for classification tasks. The model effectively reduced noise in PET scans, creating cleaner, more interpretable images. Visualizing the latent space provided insights into the model’s ability to capture and differentiate features related to Alzheimer's stages.
+AI-BASED ANALYSIS OF MEDICAL IMAGING DATA FOR EARLY DETECTION OF ALZHEIMER’S DISEASE
 
+Problem Statement
+How Artificial Intelligence (AI) can help classify early stages of Alzheimer’s by using the PET Medical Imaging dataset? 
+   Objectives
+1	Develop autoencoders for Alzheimer's disease PET brain image dimensionality reduction. 
+  2      Develop a classification algorithm leveraging low-dimensional Alzheimer diocese PET data.  
+   Use of Autoencoders
+We can use several techniques to classify the early stages of Alzheimer’s such as transformers and Graph Neural Networks including autoencoders and PCA. 
+We used Autoencoders because PET imaging medical data is high dimensional and autoencoder reduces the dimensionality reduction by encoding the PET data into a compressed latent space. It helps us to see the subtle patterns and changes in the brain and remove the noise from PET images. This helps improve the accuracy of diagnoses and provides valuable insights into early detection and progression to classify Alzheimer's stages.
 Dataset and Preprocessing
 We used a dataset of 250 NIfTI (nii) files categorized into five groups:
 •	AD (Alzheimer's Disease),
@@ -22,8 +30,7 @@ The latent space represents a compact, lower-dimensional encoding of the input d
 
 Hyperparameter Tuning
 Various hyperparameters within the encoder and decoder were fine-tuned to improve the model's classification accuracy. This process enhanced the autoencoder's ability to distinguish between different stages of Alzheimer's disease.
-Objectives
-1	Develop autoencoders for Alzheimer's disease PET brain image dimensionality reduction. 
-  2      Develop a classification algorithm leveraging low-dimensional Alzheimer diocese PET data.  
 
 
+Evaluation
+The clustering of the data did not produce the level of separation required to classify AD across its various stages and we could only manage to classify AD and CN. In the latent space, data was overlapping clusters, making it harder to classify stages. 
